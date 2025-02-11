@@ -1,0 +1,73 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  padding: 2rem;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 8px;
+}
+
+div {
+  background-color: hotpink;
+  color: white;
+  padding: 2rem;
+  grid-column: span 2;
+}
+
+.div-1 {
+  background-color: red;
+  grid-column: 1 / -1;
+}
+
+.div-6 {
+  background-color: rebeccapurple;
+  grid-column: 2 / -2;
+}
+
+/* Grid Areas Solution 
+
+.container {
+  padding: 2rem;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "a a a a"
+    "b b c c"
+    "d d e e"
+    ". f f .";
+  gap: 8px;
+}
+
+div {
+  background-color: hotpink;
+  color: white;
+  padding: 2rem;
+}
+
+.div-1 {
+  grid-area: a;
+}
+
+.div-2 {
+  grid-area: b;
+}
+
+.div-3 {
+  grid-area: c;
+}
+
+.div-4 {
+  grid-area: d;
+}
+
+.div-5 {
+  grid-area: e;
+}
+.div-6 {
+  grid-area: f;
+} */
